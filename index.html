@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genecita</title>
+    <!-- BOOTSTRAP -->	
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+     <script src="main.js"></script>
+     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+		<header class="container-fluid headerTitle">
+			<h2 style="text-align: center;">GENERATEUR DE CITATIONS</h2>
+    </header>
+    <!-- Section presentation -->
+    <div class="form-group">
+      <p style="font-size: 16px; text-align: center;"><i>GENECITA</i> est un générateur de citations aléatoires. Il vous 
+        permettra de générer des phrases qui tuent et vous aidera à donner du peps à vos dissertations. 
+        Avec <i>GENECITA,</i> vous trouverez l'expression qu'il faut, la réplique qui deviendra culte, 
+        celle qui fera rire ou chialer votre interlocuteur.
+      </p>
+    </div>
+    <!-- Section options -->
+    <div class="form-group">
+      <label data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" id="optionsLabel">
+        <input type="checkbox" value="options" id="options">
+        <span class="optionsTitle">Afficher les options</span>
+      </label>
+    </div>
+    <div class="form-group collapse" id="collapseExample">
+      <label>Nombre de citations</label>
+      <select class="form-control mb-2" id="quotesNb">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <label>Générateur de citations</label>
+      <select class="form-control mb-3" id="quotesGenerator">
+        <option value="shortSentencesGenerator">Générer des phrases courtes</option>
+        <option value="longSentencesGenerator">Générer des phrases longues</option>
+      </select>
+      <label><input type="checkbox" id="speechCitationsCheckbox"> Prononcer chaque citation</label>
+    </div>
+    <!-- Section display citations -->
+    <div class="form-group">
+      <div class="mb-2" style="display: flex;">
+        <button type="button" class="btn btn-info mr-2" id="quotesGeneratorBtn">Générer une nouvelle citation</button>
+        <button type="button" class="btn btn-info" id="stopGameBtn" onclick='window.location.reload(false)'>Arrêter le jeu</button>
+      </div>
+      <div class="display-quotes"></div>
+      <!-- Contact -->
+      <div class="mt-5">
+        <hr style="background-color: #7e7878;"></hr>
+        <p style="text-align: center; font-size: 14px;">
+          <i>Rapport de suggestion de citations, de fonctionnalités à ajouter, de bugs, 
+            commentaires ou questions : alfredgoumou65@gmail.com ou <a href="https://www.linkedin.com/in/alfred-goumou-52247b149/">LinkedIn</a>
+          </i>
+        </p>
+        <hr style="background-color: #7e7878;"></hr>
+      </div>
+    </div>
+    <script src="bootstrap//js/bootstrap.min.js"></script>
+  </body>
+  <!-- FOOTER -->
+  <footer>
+    <div style="text-align: center; font-size: 14px;"><i>"Lorsque l'on découvre GENECITA pour la première fois, on réalise que d'autres l'ont découvert avant nous."</i></div>
+  </footer>
+</html>
