@@ -47,17 +47,7 @@ quotesGeneratorBtn.addEventListener('click', function() {
     }
 
     // Get quotes to display
-    const quotes = [];
-    for (let i = 0; i < quotesNbSelected; i++) {
-      let quote = [];
-      for (let i = 0; i < sentences.length; i++) {
-        let randomNumber = Math.floor(Math.random() * sentences[i].length);
-        let randomWord = sentences[i][randomNumber];
-        quote.push(randomWord)
-      }
-      quotes.push(quote.join(''));
-      console.log(quote.join(''));
-    }
+    let quotes = getquotes (quotesNbSelected, sentences);
 
     // Display quotes
     let quotesSentence ="";
@@ -92,3 +82,19 @@ speeckCheckboxElt.addEventListener('click', function() {
       speechSynthesis.cancel();
     }
 });
+
+// Get quotes to display
+function getquotes(quotesNbSelected, sentences) {
+  const quotes = [];
+  for (let i = 0; i < quotesNbSelected; i++) {
+    let quote = [];
+    for (let i = 0; i < sentences.length; i++) {
+      let randomNumber = Math.floor(Math.random() * sentences[i].length);
+      let randomWord = sentences[i][randomNumber];
+      quote.push(randomWord);
+    }
+    quotes.push(quote.join(''));
+    console.log(quote.join(''));
+  }
+  return quotes;
+}
