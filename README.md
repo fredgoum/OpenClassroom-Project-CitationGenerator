@@ -1,3 +1,3 @@
 # Project - Citation Generator
 
-Lien vers le site :  https://fredgoum.github.io/citation-generator/
+Link to the site :  https://fredgoum.github.io/citation-generator/
