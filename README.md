@@ -1,3 +1,3 @@
-# OpenClassrooms-Project-CitationGenerator
+# Project - Citations Generator
 
-Lien vers le site :  https://fredgoum.github.io/Project-Citations-Generator/
+Lien vers le site :  https://fredgoum.github.io/citation-generator/
