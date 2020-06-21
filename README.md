@@ -1,3 +1,5 @@
-# Project - Citation Generator
+# Project Citation Generator
 
-Link to the site :  https://fredgoum.github.io/citation-generator/
+A generator of configurable random citations.
+
+Link to the site :  https://fredgoum.github.io/citation-generator/.
